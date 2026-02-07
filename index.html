@@ -40,7 +40,7 @@
       line-height: 1.6;
     }
 
-    video {
+    iframe {
       width: 100%;
       margin-top: 20px;
       border-radius: 20px;
@@ -97,9 +97,15 @@
 
 <button onclick="playVideo()">Écoute la vidéo 🎥</button>
 
-<video id="myVideo" autoplay muted loop playsinline>
-  <source src="v.mp4" type="video/mp4">
-</video>
+<iframe
+  width="100%"
+  height="500"
+  style="border-radius:20px;"
+  src="https://www.youtube.com/embed/D-a6vKMOpP8?autoplay=1&mute=1&loop=1&playlist=D-a6vKMOpP8"
+  frameborder="0"
+  allow="autoplay; encrypted-media"
+  allowfullscreen>
+</iframe>
 
   
 
