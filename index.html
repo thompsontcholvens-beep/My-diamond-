@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pour Mme Shadow ❤️</title>
+
+  <style>
+    body {
+      margin: 0;
+      font-family: "Georgia", serif;
+      background: linear-gradient(to bottom, #ff5f8f, #8b1d5a);
+      color: white;
+      text-align: center;
+      padding: 50px 20px;
+    }
+
+    h1 {
+      font-size: 3em;
+      margin-bottom: 10px;
+    }
+
+    h2 {
+      font-weight: normal;
+      margin-top: 0;
+      color: #ffd6e8;
+    }
+
+    .card {
+      max-width: 700px;
+      margin: auto;
+      background: rgba(255, 255, 255, 0.12);
+      padding: 35px;
+      border-radius: 25px;
+      box-shadow: 0 0 25px rgba(0,0,0,0.3);
+    }
+
+    p {
+      font-size: 1.3em;
+      line-height: 1.6;
+    }
+
+    video {
+      width: 100%;
+      margin-top: 20px;
+      border-radius: 20px;
+      box-shadow: 0 0 15px rgba(0,0,0,0.4);
+    }
+
+    button {
+      margin-top: 25px;
+      padding: 15px 30px;
+      border: none;
+      border-radius: 30px;
+      background: white;
+      color: #b0124a;
+      font-size: 1.1em;
+      cursor: pointer;
+      transition: 0.3s;
+    }
+
+    button:hover {
+      transform: scale(1.08);
+    }
+
+    #secret {
+      display: none;
+      margin-top: 25px;
+      font-size: 1.5em;
+      font-weight: bold;
+      color: #ffe6f2;
+    }
+  </style>
+</head>
+
+<body>
+
+  <h1>❤️ Mme Shadow ❤️</h1>
+  <h2>Mon amour, mon mystère, ma lumière</h2>
+
+  <div class="card">
+    <p>
+      Anne…  
+      Je n’ai peut-être pas les moyens d’offrir un cadeau coûteux,  
+      mais je peux t’offrir quelque chose de plus rare :
+      <br><br>
+      **mon temps, mon cœur, et une preuve que je pense à toi.**
+    </p>
+
+    <p>
+      Tu es ma douceur dans le chaos,  
+      mon sourire dans les jours lourds,  
+      et ma plus belle évidence.
+    </p>
+
+    <!-- 🎥 Ajoute ta vidéo ici -->
+
+<button onclick="playVideo()">Écoute la vidéo 🎥</button>
+
+<video id="myVideo" autoplay muted loop playsinline>
+  <source src="v.mp4" type="video/mp4">
+</video>
+
+  
+
+
+
+    <button onclick="showSecret()">Clique pour ton message secret 💌</button>
+
+    <div id="secret">
+     Mme Shadow… parfois je n’ai rien à offrir sauf moi-même, mais si tu savais à quel point je t’aime sincèrement, tu comprendrais que c’est mon plus grand cadeau
+    </div>
+  </div>
+
+  <script>
+    function showSecret() {
+      document.getElementById("secret").style.display = "block";
+    }
+    function playVideo() {
+    const vid = document.getElementById("myVideo");
+    vid.muted = false;
+    vid.play();
+  }
+
+  </script>
+  <footer>
+    ©préparer par THOMPSON Tcholvens 
+  </footer>
+
+</body>
+</html
